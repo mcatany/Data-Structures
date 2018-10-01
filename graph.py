@@ -1,4 +1,5 @@
 # Graph
+# Uses python3
 
 class Graph:
 	def __init__(self, gdict=None):
@@ -33,11 +34,13 @@ graph_elements = {"a": ["b","c"],
 		"d":["e"],
 		"e":["d"],		
 		}	
-		
-g = Graph(graph_elements)
 
-print(g.getVertices())
+# Example of usage
+if __name__ == "__main__":				
+	g = Graph(graph_elements)
 
-g.addVertex("f")
+	print(g.getVertices())
 
-print(g.getEdges())
+	g.addVertex("f")
+
+	print(g.getEdges())

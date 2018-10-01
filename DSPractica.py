@@ -1,6 +1,5 @@
-# DS Práctica
-
-# Nodes
+# Data structures Pràctica
+# Uses python3
 
 class Daynames:
 	def __init__(self, dataval = None):
@@ -43,14 +42,15 @@ class SLinkedList:
 		
 		
 		
-	
-list1 = SLinkedList()
-list1.headval = Node("Monday")
-day2 = Node("Tuesday")
-day3 = Node("Wednesday")
-list1.headval.nextval = day2
-list1.headval.nextval.nextval = day3
-list1.atBeginning("Sunday")
+# Example of usage
+if __name__ == "__main__":			
+	list1 = SLinkedList()
+	list1.headval = Node("Monday")
+	day2 = Node("Tuesday")
+	day3 = Node("Wednesday")
+	list1.headval.nextval = day2
+	list1.headval.nextval.nextval = day3
+	list1.atBeginning("Sunday")
 
-list1.printList()
+	list1.printList()
 		

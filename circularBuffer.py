@@ -1,4 +1,5 @@
 # Circular Buffer
+# Uses python3
 
 N = 7
 queue = [0] * N
@@ -20,14 +21,16 @@ def pop():
 	
 def empty():
 	return head == tail
-	
-push(7)
-print(queue)
-push(8)
-print(queue)
-push(9)
-print(queue)
-push(10)
-print(queue)
-pop()
-print(queue)
+
+# Example of usage
+if __name__ == "__main__":			
+	push(7)
+	print(queue)
+	push(8)
+	print(queue)
+	push(9)
+	print(queue)
+	push(10)
+	print(queue)
+	pop()
+	print(queue)

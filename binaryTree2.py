@@ -1,4 +1,5 @@
 # Binary Tree
+# Uses python3
 
 class Node:
 
@@ -32,10 +33,11 @@ class Node:
         if self.right:
             self.right.PrintTree()
 
-# Use the insert method to add nodes
-root = Node(12)
-root.insert(6)
-root.insert(14)
-root.insert(3)
+# Example of usage
+if __name__ == "__main__":		
+	root = Node(12)
+	root.insert(6)
+	root.insert(14)
+	root.insert(3)
 
-root.PrintTree()
+	root.PrintTree()

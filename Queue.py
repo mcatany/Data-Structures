@@ -1,4 +1,5 @@
 # Queue
+# Uses python3
 
 class Queue:
 	def __init__(self):
@@ -20,18 +21,20 @@ class Queue:
 	
 	def size(self):
 		return len(self.queue)
-		
-aQueue = Queue()
-print(aQueue.size())
-aQueue.addtoq(1)
-print(aQueue.size())
-aQueue.addtoq(3)
-print(aQueue.size())
-aQueue.addtoq(5)		
-print(aQueue.size())
-print(aQueue.remove())
-print(aQueue.size())
-print(aQueue.remove())
-print(aQueue.size())
-print(aQueue.remove())
-print(aQueue.size())
+
+# Example of usage
+if __name__ == "__main__":				
+	aQueue = Queue()
+	print(aQueue.size())
+	aQueue.addtoq(1)
+	print(aQueue.size())
+	aQueue.addtoq(3)
+	print(aQueue.size())
+	aQueue.addtoq(5)		
+	print(aQueue.size())
+	print(aQueue.remove())
+	print(aQueue.size())
+	print(aQueue.remove())
+	print(aQueue.size())
+	print(aQueue.remove())
+	print(aQueue.size())

@@ -1,4 +1,5 @@
 # Binary Tree
+# Uses python3
 
 class Node:
 
@@ -43,12 +44,14 @@ class Node:
 		print(self.data)	
 		if self.right:
 			self.right.PrintTree()
-		
-root = Node(12)
-root.insert(6)
-root.insert(14)
-root.insert(3)
-print(root.findval(7))
-print(root.findval(14))
 
-root.PrintTree()
+# Example of usage
+if __name__ == "__main__":					
+	root = Node(12)
+	root.insert(6)
+	root.insert(14)
+	root.insert(3)
+	print(root.findval(7))
+	print(root.findval(14))
+
+	root.PrintTree()
